@@ -15,8 +15,8 @@ func worker(id int, tasks <-chan int, wg *sync.WaitGroup) {
 	}
 }
 func main() {
-	numTasks := 10  // Number of tasks to be executed
-	numWorkers := 3 // Number of workers
+	numTasks := 15  // Number of tasks to be executed
+	numWorkers := 5 // Number of workers
 	tasks := make(chan int, numTasks)
 	var wg sync.WaitGroup
 	// Start the workers
